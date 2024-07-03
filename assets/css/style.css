@@ -4,10 +4,13 @@
 header{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #logo{
     position: relative;
+    left: 5rem;
+    top: 1.5rem;
 }
 
 nav{
@@ -15,6 +18,9 @@ nav{
     font-size: 16px;
     font-weight: 600;
     color: #4800BD;
+    position: relative;
+    top: 1.5rem;
+    right: 5rem;
     ul{
         list-style-type: none;
         display: flex;
