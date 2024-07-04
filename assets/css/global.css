@@ -19,19 +19,22 @@ body{
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 header{
     position: relative;
-    height: 100%;
-    width: 100%;
+    height: fit-content;
+    width: 83%;
 }
 
 #top-row-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* flex-direction: row; */
     margin-bottom: 4rem;
 }
 
@@ -46,6 +49,7 @@ header{
 nav{
     position: relative;
     height: fit-content;
+    width: fit-content;
     top: 1.5rem;
     right: 5rem;
     ul{
@@ -110,7 +114,8 @@ nav{
 }
 
 main {
-    height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 aside{
@@ -120,110 +125,4 @@ aside{
     flex-wrap: wrap;
     width: 30rem;
     height: 90%;
-}
-
-#search-wrapper{
-    width: fit-content;
-    position: relative;
-    top: 25px;
-    left: 170px;
-}
-
-#search-bar{
-    padding-left: 2rem;
-    border: none;
-    border-radius: 60px;
-    height: max-content;
-    width: max-content;
-    background-color:#F5F5F5;
-    min-height: 70px;
-    min-width: 257px;
-    border: 2px solid transparent;
-    font-weight: 300;
-    font-size: 14px;
-    font-family: "Lexend", sans-serif;
-    &:focus{
-        outline: none !important;
-        border: 2px solid #ddd;
-    }
-}
-#search-icon{
-    position: relative;
-    top: 0.4rem;
-    right: 2.5rem;
-    
-    &:hover{
-        height: 30px;
-        width: 30px;
-    }
-}
-
-#categories-aside{
-    position: relative;
-}
-
-/* ---------------------------------------------------------------------------------------- */
-/* ------------------------------------ CYBERSECURITY ------------------------------------- */
-/* ---------------------------------------------------------------------------------------- */
-
-#hero-wrapper{
-    position: relative;
-    display: flex;
-    height: fit-content;
-    width: 100vw;
-    justify-content: center;
-}
-
-
-
-#hero{
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    /* flex-direction: column; */
-    position: relative;
-    height: 520px;
-    width: 83%;
-    /* top: 137px;
-    left: 92px; */
-    /* margin-top: 4rem; */
-    border-radius: 38px;
-    background-color: #4800BD;
-    
-    #hero-image{
-        position: relative;
-        bottom: 4rem;
-    }
-    #hero-text{
-        position: relative;
-        top: 6rem;
-    }
-    h1, h3{
-        position: relative;
-        line-height: 60px;
-        /* height: 60px; */
-        /* width: 723px; */
-        color: white;
-        margin: 0;
-    }
-    h1{
-        margin-left: 2rem;
-        font-size: 76px;
-        font-weight: 900;
-    }
-    h3{
-        /* margin-top: 3rem; */
-        margin-left: 2.8rem;
-        font-size: 32px;
-        font-weight: 400;
-    }
-    .hero-theme-span{
-        margin: 0;
-    }
-    button{
-        margin-left: 2.8rem;
-        border-radius: 24px;
-        height: 60px;
-        width: 238px;
-    }
 }

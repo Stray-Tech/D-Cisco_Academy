@@ -1,0 +1,60 @@
+#hero-wrapper{
+    position: relative;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+}
+
+#hero{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    position: relative;
+    height: 520px;
+    width: 88%;
+    border-radius: 38px;
+    background-color: #4800BD;
+    
+    #hero-text{
+        height: fit-content;
+        width: fit-content;
+        position: relative;
+        top: 3.5rem;
+    }
+
+    #hero-image{
+        position: relative;
+        bottom: 4rem;
+    }
+    h1, h3{
+        position: relative;
+        line-height: 60px;
+        height: fit-content;
+        width: fit-content;
+        color: white;
+        margin: 0;
+    }
+    h1{
+        margin-left: 2rem;
+        margin-bottom: 3.5rem;
+        font-size: 76px;
+        font-weight: 900;
+    }
+    h3{
+        /* margin-top: 3rem; */
+        margin-left: 2.8rem;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .hero-theme-span{
+        margin: 0;
+    }
+    button{
+        margin-top: 3.5rem;
+        margin-left: 2.8rem;
+        border-radius: 24px;
+        height: 60px;
+        width: 238px;
+    }
+}
