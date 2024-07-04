@@ -20,6 +20,8 @@ body{
     width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header{
@@ -179,11 +181,11 @@ aside{
 #hero{
     display: flex;
     align-items: start;
-    justify-content: center;
+    justify-content: space-evenly;
     /* flex-direction: column; */
     position: relative;
     height: 520px;
-    width: 83%;
+    min-width: 83%;
     /* top: 137px;
     left: 92px; */
     /* margin-top: 4rem; */
@@ -225,5 +227,31 @@ aside{
         border-radius: 24px;
         height: 60px;
         width: 238px;
+        &:active{
+            background-color: rgb(223, 223, 223);
+        }
+    }
+}
+
+main{
+    display: flex;
+    height: 100%;
+    width: 83%;
+    justify-content: center;
+}
+
+#accreditation{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-top: 2rem;
+    & img{
+        height: 200px;
+        width: 200px;
+    }
+    & p{
+        font-size: 28px;
+        color: black;
+        font-weight: 400;
     }
 }
