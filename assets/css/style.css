@@ -23,12 +23,16 @@ body{
 }
 
 header{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#top-row-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
-    height: fit-content;
-    width: fit-content;
+    margin-bottom: 4rem;
 }
 
 #logo{
@@ -179,7 +183,7 @@ aside{
     width: 83%;
     /* top: 137px;
     left: 92px; */
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     border-radius: 38px;
     background-color: #4800BD;
     
