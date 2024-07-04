@@ -60,6 +60,7 @@ nav{
             a{text-decoration: none;}
 
             .dropdown {
+                z-index: 1;
                 position: relative;
                 display: inline-block;
 
@@ -173,11 +174,13 @@ aside{
     justify-content: center;
 }
 
+
+
 #hero{
     display: flex;
     align-items: start;
     justify-content: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     position: relative;
     height: 520px;
     width: 83%;
@@ -187,6 +190,14 @@ aside{
     border-radius: 38px;
     background-color: #4800BD;
     
+    #hero-image{
+        position: relative;
+        bottom: 4rem;
+    }
+    #hero-text{
+        position: relative;
+        top: 6rem;
+    }
     h1, h3{
         position: relative;
         line-height: 60px;
