@@ -1,58 +1,68 @@
-#search-wrapper{
-    width: fit-content;
+main {
     position: relative;
-    top: 25px;
-    left: 170px;
+    display: flex;
+    gap: 100px;
+    top: -130px;
 }
 
-#search-bar{
-    padding-left: 2rem;
-    border: none;
-    border-radius: 60px;
-    height: max-content;
-    width: max-content;
-    background-color:#F5F5F5;
-    min-height: 70px;
-    min-width: 257px;
-    border: 2px solid transparent;
-    font-weight: 300;
-    font-size: 14px;
-    font-family: "Lexend", sans-serif;
-    &:focus{
-        outline: none !important;
-        border: 2px solid #ddd;
-    }
-}
-#search-icon{
+aside{
     position: relative;
-    top: 0.4rem;
-    right: 2.5rem;
-    
-    &:hover{
-        height: 30px;
-        width: 30px;
+    #search-wrapper{
+        width: 400px;
+        position: relative;
+        /* top: 25px; */
+        /* left: 170px; */
     }
-}
 
-#categories-aside{
-    position: relative;
+    #search-bar{
+        padding-left: 2rem;
+        border-radius: 60px;
+        border: 2px solid transparent;
+        height: fit-content;
+        width: fit-content;
+        background-color:#F5F5F5;
+        min-height: 70px;
+        min-width: 257px;
+        font-weight: 300;
+        font-size: 14px;
+        font-family: "Lexend", sans-serif;
+        &:focus{
+            outline: none !important;
+            border: 2px solid #ddd;
+        }
+    }
+    #search-icon{
+        position: relative;
+        top: 0.4rem;
+        right: 2.5rem;
+        
+        &:hover{
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+    #categories-aside{
+        position: relative;
+        height: fit-content;
+    }
 }
 
 .wrapper{
-    width: 500px;
-}
-
-#blogs{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    /* width: 50rem; */
-}
-#blog {
-    flex: 1 1 160px;
-}
-
-.blog{
-    height: 200px;
-    width: 200px;
+    position: relative;
+    width: 700px;
+    #blogs{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* width: 50rem; */
+    }
+    #blog {
+        flex: 1 1 160px;
+    }
+    
+    .blog{
+        height: 200px;
+        width: 200px;
+    }
 }
