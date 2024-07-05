@@ -11,30 +11,10 @@
     font-weight: 600 !important;
 }
 
-/* header, main, footer{
-    width: 100vw;
-    display: inline-block;
-    position: absolute;
-} */
-
 .navbar{
     width: 100vw !important;
     max-width: fit-content !important;
 }
-/* 
-body{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-header{
-    position: relative;
-    height: fit-content;
-    width: 83%;
-} */
 
 #top-row-wrapper{
     display: flex;
@@ -122,33 +102,31 @@ nav{
 
 main{
     display: flex;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
-    /* flex-direction: column; */
 }
 
 aside{
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     gap: 50px;
     position: relative;
-    min-width: 300px;
-    /* gap: 20px; */
+    min-width: 220px;
     #search-wrapper{
         max-width: 260px;
         position: relative;
     }
 
     #search-bar{
-        padding-left: 2rem;
+        position: relative;
+        padding-left: 25px;
         border-radius: 60px;
         border: 2px solid transparent;
-        height: fit-content;
-        width: fit-content;
+        /* height: 30px; */
+        width: 195px;
         background-color:#F5F5F5;
-        min-height: 70px;
-        min-width: 257px;
+        min-height: 60px;
+        /* width: 220px; */
         font-weight: 300 !important;
         font-size: 14px !important;
         font-family: "Lexend", sans-serif !important;
@@ -157,14 +135,23 @@ aside{
             border: 2px solid #ddd;
         }
     }
-    #search-icon{
+
+    .search-icon-wrapper{
         position: absolute;
-        top: 0.4rem;
-        right: 2.5rem;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end; 
+        align-items: center;
         
-        &:hover{
-            height: 30px;
-            width: 30px;
+        #search-icon{
+            margin-right: 15px;
+            
+            &:hover{
+                height: 30px;
+                width: 30px;
+            }
         }
     }
 
@@ -174,5 +161,6 @@ aside{
         background: #F5F5F5;
         border-radius: 20px;
         padding: 1.5rem;
+        /* width: 220px; */
     }
 }
