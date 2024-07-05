@@ -5,12 +5,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 *{
-    font-family: "Poppins", sans-serif;
-    color: #4800BD;
-    font-size: 16px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif !important;
+    color: #4800BD !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
 }
 
+/* header, main, footer{
+    width: 100vw;
+    display: inline-block;
+    position: absolute;
+} */
+
+.navbar{
+    width: 100vw !important;
+    max-width: fit-content !important;
+}
+/* 
 body{
     height: 100vh;
     width: 100vw;
@@ -23,14 +34,14 @@ header{
     position: relative;
     height: fit-content;
     width: 83%;
-}
+} */
 
 #top-row-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* flex-direction: row; */
     margin-bottom: 4rem;
+    width: auto;
 }
 
 #logo{
@@ -45,6 +56,7 @@ nav{
     position: relative;
     height: fit-content;
     width: fit-content;
+    z-index: 1;
     top: 1.5rem;
     right: 5rem;
     ul{
@@ -77,7 +89,7 @@ nav{
                     border-radius: 20px;
                     
                     & a {
-                        font-size: 14px;
+                        font-size: 14px !important;
                         padding: 12px 12px;
 
                         text-decoration: none;
@@ -108,14 +120,23 @@ nav{
     }
 }
 
+main{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
 aside{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     gap: 50px;
     position: relative;
+    min-width: 300px;
+    /* gap: 20px; */
     #search-wrapper{
-        width: 400px;
+        max-width: 260px;
         position: relative;
     }
 
@@ -128,16 +149,16 @@ aside{
         background-color:#F5F5F5;
         min-height: 70px;
         min-width: 257px;
-        font-weight: 300;
-        font-size: 14px;
-        font-family: "Lexend", sans-serif;
+        font-weight: 300 !important;
+        font-size: 14px !important;
+        font-family: "Lexend", sans-serif !important;
         &:focus{
             outline: none !important;
             border: 2px solid #ddd;
         }
     }
     #search-icon{
-        position: relative;
+        position: absolute;
         top: 0.4rem;
         right: 2.5rem;
         

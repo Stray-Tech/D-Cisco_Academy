@@ -1,4 +1,4 @@
-#hero-wrapper{
+/* #hero-wrapper{
     position: relative;
     display: flex;
     height: fit-content;
@@ -23,7 +23,7 @@
     }
 
     #hero-image{
-        position: relative;
+        position: absolute;
         bottom: 4rem;
     }
     h1, h3{
@@ -41,7 +41,6 @@
         font-weight: 900;
     }
     h3{
-        /* margin-top: 3rem; */
         margin-left: 2.8rem;
         font-size: 32px;
         font-weight: 400;
@@ -62,4 +61,4 @@
     &:active{
         background-color: aliceblue;
     }
-}
+} */
