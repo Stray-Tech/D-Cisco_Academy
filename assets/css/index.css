@@ -1,9 +1,8 @@
-/* main {
-    position: relative;
+main{
     display: flex;
-    gap: 100px;
-    top: -130px;
-} */
+    gap: 50px;
+    justify-content: center;
+}
 
 .wrapper{
     /* position: relative; */
