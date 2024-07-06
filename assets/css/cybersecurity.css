@@ -74,6 +74,10 @@
 .purple-button{
     background-color: #4800BD;
     color: white !important;
+    margin: 1rem;
+    &:active{
+        background-color: #6200ff;
+    }
 }
 
 main{
@@ -99,13 +103,46 @@ main{
     }
     #sales-pitch, #sales-pitch * {
         width: 85%;
-        margin: 2rem 0;
+        margin: 1.5rem 0;
         font-size: 24px !important;
         font-weight: 400 !important;
         color: black !important;
         ul{
             padding-inline-start: 120px;
-            width: 100%;
+            width: 90%;
+            li{
+                width: 100%;
+            }
+            & :last-child{
+                margin-bottom: 0;
+            }
         }
+    }
+    #sales-pitch{
+        margin-bottom: 0;
+    }
+    #summary{
+        display:flex; 
+        background-color: #FF8DEB12; 
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+        list-style-position: inside;
+        text-align: center;
+        h4{
+            font-size: 24px !important; 
+            font-weight: 800 !important; 
+            color: black !important; 
+            margin-bottom: 0;
+        }
+        ul li{
+            color: black !important;
+        }
+    }
+    #finishing-statement{
+        color: #C11B8F !important;
+        text-align: center;
+        font-size: 24px !important;
+        width: 85%;
     }
 }
