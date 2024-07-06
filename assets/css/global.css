@@ -26,14 +26,14 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 4rem;
-    width: auto;
+    /* margin-bottom: 4rem; */
+    /* width: auto; */
 }
 
 #logo{
     position: relative;
     left: 5rem;
-    top: 1.5rem;    
+    margin: 2rem 0;
     height:48px;
     width:176px;
 }
@@ -63,10 +63,6 @@ nav{
                 &:hover .dropdown-content {
                     display: block;
                 }
-                /* &:hover .dropdown-content {
-                    position: absolute !important;
-                    z-index: 2 !important;
-                } */
 
                 &:hover .dropbtn {background-color: #F5F5F5;}
 
@@ -249,20 +245,20 @@ aside{
     }
     #logo{
         z-index: 2;
-        top: 30px;
+        /* top: 30px; */
         left: 2rem;
         width: 100px;
         height: 27px;
     }
-    nav ul{
+    nav{
         position: absolute;
-        top: 5rem;
-        margin-bottom: 5rem;
+        /* top: 5rem; */
+        /* margin-bottom: 5rem; */
         opacity: 0;
         display: none;
         li{
             margin: 5px 0;
-            display: inline-block !important;
+            display: block !important;
             width: 100%;
             text-align: center;
         }
@@ -270,26 +266,34 @@ aside{
     aside{
         display: none;
     }
-    #hamburger-button{
+    #burger-button{
         background: none;
         border: none;
         display: flex !important;
-        position: absolute;
+        position: relative;
         z-index: 2;
-        top: 25px;
+        /* top: 25px; */
+        margin: 2rem 0;
         right: 4rem;
+        /* background-image: url('../images/burger.png');
+        background-size: 34px;
+        background-repeat: no-repeat;
+        background-position: center; */
         &:focus{
-            &+nav ul{
-                display: flex !important;
+            /* background-image: url('../images/icons8-close-window-50.png');
+            background-size: 34px;
+            background-repeat: no-repeat;
+            background-position: center; */
+            &+nav{
+                display: block !important;
                 transition: 1s;
                 opacity: 1;
-                position: relative;
-                top: 5rem;
-                margin-bottom: 5rem;
-                li{
+                background-color: white;
+                position: fixed;
+                top: 4rem;
+                ul li{
                     margin: 5px 0;
                     display: inline-block !important;
-                    width: 100%;
                     text-align: center;
                 }
             }
