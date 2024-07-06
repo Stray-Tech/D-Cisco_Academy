@@ -75,6 +75,9 @@
     background-color: #4800BD;
     color: white !important;
     margin: 1rem;
+    &:active{
+        background-color: #6200ff;
+    }
 }
 
 main{
