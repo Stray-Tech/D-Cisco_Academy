@@ -70,10 +70,6 @@ footer{
 }
 
 @media (max-width: 760px) {
-    html{
-        height: fit-content;
-        width: fit-content;
-    }
     #page-nav-wrapper{
         gap: 10px;
         left: 25%;
