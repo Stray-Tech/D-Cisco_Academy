@@ -1,24 +1,24 @@
-main {
+/* main {
     position: relative;
     display: flex;
     gap: 100px;
     top: -130px;
-}
+} */
 
 .wrapper{
-    position: relative;
-    width: 700px;
+    /* position: relative; */
     #blogs{
+        max-width: 610px;
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
     }
     #blog {
-        flex: 1 1 160px;
+        flex: 1 1 200px;
     }
     
     .blog{
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
     }
 }
