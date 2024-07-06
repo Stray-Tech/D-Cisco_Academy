@@ -69,3 +69,20 @@ footer{
         }
     }
 }
+
+@media (max-width: 760px) {
+    html{
+        height: fit-content;
+        width: fit-content;
+    }
+    #page-nav-wrapper{
+        gap: 10px;
+        left: 25%;
+        .page-nav{
+            height: 25px;
+            width: 25px;
+            border-radius: 2px;
+            line-height: 25px;
+        }
+    }
+}

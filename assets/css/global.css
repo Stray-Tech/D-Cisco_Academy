@@ -245,15 +245,25 @@ aside{
 }
 /* mobile */
 @media (max-width: 760px) {
+    body{
+        margin: 0;
+    }
+    #top-row-wrapper{
+        align-items: center;
+    }
     #logo{
         z-index: 2;
+        top: 30px;
         left: 2rem;
+        width: 100px;
+        height: 27px;
     }
     nav ul{
         position: absolute;
         top: 5rem;
         margin-bottom: 5rem;
         opacity: 0;
+        display: none;
         li{
             margin: 5px 0;
             display: inline-block !important;
@@ -265,10 +275,12 @@ aside{
         display: none;
     }
     #hamburger-button{
+        background: none;
+        border: none;
         display: flex !important;
         position: absolute;
         z-index: 2;
-        top: 2rem;
+        top: 25px;
         right: 4rem;
         &:focus{
             &+nav ul{
@@ -286,6 +298,11 @@ aside{
                 }
             }
         }
+    }
+
+    #blogs{
+        margin: 0 !important;
+        width: 100%
     }
 
     .blog{
