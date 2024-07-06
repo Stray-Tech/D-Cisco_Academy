@@ -11,6 +11,12 @@
     font-weight: 600 !important;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .navbar{
     width: 100vw !important;
     max-width: fit-content !important;
@@ -247,14 +253,13 @@ aside{
         position: absolute;
         top: 5rem;
         margin-bottom: 5rem;
+        opacity: 0;
         li{
             margin: 5px 0;
             display: inline-block !important;
             width: 100%;
             text-align: center;
         }
-        opacity: 0;
-        /* display: none; */
     }
     aside{
         display: none;
