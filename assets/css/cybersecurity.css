@@ -70,3 +70,42 @@
         background-color: aliceblue;
     }
 }
+
+.purple-button{
+    background-color: #4800BD;
+    color: white !important;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & #accreditation{
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: row;
+        width: 66%;
+        & p{
+            font-size: 28px !important;
+            font-weight: 400 !important;
+            color: black !important;
+        }
+    }
+    & #slogan{
+        font-size: 36px !important;
+        font-weight: 900 !important;
+        width: 75%;
+        margin: 0;
+    }
+    #sales-pitch, #sales-pitch * {
+        width: 85%;
+        margin: 2rem 0;
+        font-size: 24px !important;
+        font-weight: 400 !important;
+        color: black !important;
+        ul{
+            padding-inline-start: 120px;
+            width: 100%;
+        }
+    }
+}
