@@ -120,9 +120,9 @@ aside{
     flex-direction: column;
     gap: 50px;
     position: relative;
-    min-width: 220px;
+    width: 300px;
     #search-wrapper{
-        max-width: 260px;
+        /* max-width: 300px; */
         position: relative;
     }
 
@@ -132,7 +132,7 @@ aside{
         padding-left: 25px;
         border-radius: 60px;
         border: 2px solid transparent;
-        width: 195px;
+        width: 275px;
         background-color:#F5F5F5;
         min-height: 60px;
         font-weight: 300 !important;
@@ -163,12 +163,38 @@ aside{
         }
     }
 
+    ul{
+        padding: 0;
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
     #categories-aside{
         position: relative;
         height: fit-content;
         background: #F5F5F5;
         border-radius: 20px;
         padding: 1.5rem;
-        /* width: 220px; */
+    }
+
+    #featured-section{
+        background: #F5F5F5;
+        border-radius: 20px;
+        padding: 1.5rem;
+        .featured-post{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 2rem;
+            .feature-img {
+                /* height: 40%; */
+                width: 90px;
+            }
+        }
     }
 }
