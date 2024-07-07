@@ -279,7 +279,7 @@ aside{
         background-size: 34px;
         background-repeat: no-repeat;
         background-position: center; */
-        &:focus{
+        &:focus, &:hover{
             /* background-image: url('../images/icons8-close-window-50.png');
             background-size: 34px;
             background-repeat: no-repeat;
