@@ -1,10 +1,3 @@
-body{
-    margin: 0;
-    padding: 0;
-    max-width: 1900px;
-    min-width: 720px;;
-}
-
 #hero-wrapper{
     position: relative;
     display: flex;
@@ -153,6 +146,10 @@ main{
 }
 
 @media (max-width: 760px) {
+    #body{ 
+        max-width: 380px !important;
+        min-width: 144px !important;
+    }
     #hero{
         max-width: 95%;
         #hero-image{
@@ -161,5 +158,8 @@ main{
         #hero-text h1{
             font-size: 64px !important;
         }
+    }
+    #accreditation{
+        display: none !important;
     }
 }

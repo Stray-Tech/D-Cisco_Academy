@@ -17,6 +17,13 @@ body{
     justify-content: center;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 1900px;
+    min-width: 38%;
+}
+
 .navbar{
     width: 100vw !important;
     max-width: fit-content !important;
