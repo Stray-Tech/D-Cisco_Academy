@@ -1,32 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 1900px;
+    min-width: 720px;;
+}
+
 #hero-wrapper{
     position: relative;
     display: flex;
     height: fit-content;
     justify-content: center;
+    max-width:100%
 }
 
 #hero{
     display: flex;
     flex-direction: row;
-    /* align-items: start; */
     justify-content: space-around;
     position: relative;
     height: 520px;
-    width: 88%;
     border-radius: 38px;
     background-color: #4800BD;
+    min-width: 88%;
 
     #hero-text{
         position: relative;
         height: fit-content;
         width: fit-content;
-        /* top: 3.5rem; */
     }
 
     #hero-image{
         position: relative;
-        /* width: 40%; */
-        /* bottom: 4rem; */
     }
     #hero-text{
         position: relative;
@@ -40,8 +44,7 @@
             margin: 0;
         }
         h1{
-            margin-left: 2rem;  
-            /* margin-bottom: 3.5rem; */
+            margin-left: 2rem;
             font-size: 76px !important;
             font-weight: 900 !important;
         }
@@ -85,6 +88,7 @@ main{
     flex-direction: column;
     align-items: center;
     & #accreditation{
+        justify-content: center;
         margin: 1rem 0;
         display: flex;
         flex-direction: row;
@@ -119,6 +123,7 @@ main{
         }
     }
     #sales-pitch{
+        /* justify-content: center; */
         margin-bottom: 0;
     }
     #summary{
@@ -144,5 +149,17 @@ main{
         text-align: center;
         font-size: 24px !important;
         width: 85%;
+    }
+}
+
+@media (max-width: 760px) {
+    #hero{
+        max-width: 95%;
+        #hero-image{
+            display: none;
+        }
+        #hero-text h1{
+            font-size: 64px !important;
+        }
     }
 }
