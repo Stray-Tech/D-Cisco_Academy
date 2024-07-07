@@ -175,9 +175,12 @@ main{
         #slogan{
             font-size: 20px !important;
             font-weight: 800 !important;
+            text-align: center;
+            margin-top: 0.7rem;
         }
         #sales-pitch{
             font-size: 16px !important;
+            margin-top: 2.2rem;
         }
         #sales-pitch, #sales-pitch * {
             font-size: 16px !important;
@@ -204,6 +207,7 @@ main{
         #finishing-statement{
             font-size: 16px !important;
             padding: 2rem 0;
+            margin-bottom: 0;
         }
     }
 }
