@@ -24,6 +24,8 @@
 
     #hero-image{
         position: relative;
+        scale: 1.25;
+        top: 0.8rem;
     }
     #hero-text{
         position: relative;
@@ -86,6 +88,9 @@ main{
         display: flex;
         flex-direction: row;
         width: 66%;
+        & img{
+            margin: auto;
+        }
         & p{
             font-size: 28px !important;
             font-weight: 400 !important;
