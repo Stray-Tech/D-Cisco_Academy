@@ -146,20 +146,50 @@ main{
 }
 
 @media (max-width: 760px) {
-    #body{ 
-        max-width: 380px !important;
-        min-width: 144px !important;
+    body{ 
+        gap: 2rem;
+    }
+    #burger-button{
+        right: 1.5rem
+    }
+    #hero-wrapper{
+        max-width: 100vw;
     }
     #hero{
-        max-width: 95%;
+        width: 95vw;
         #hero-image{
             display: none;
         }
-        #hero-text h1{
-            font-size: 64px !important;
+        #hero-text{ 
+            h1{
+                margin-left: 1.7rem !important;
+                font-size: 36px !important;
+            }
+            h3{
+                margin-left: 1.7rem !important;
+                font-size: 20px !important;
+            }
         }
     }
-    #accreditation{
-        display: none !important;
+    main {
+        #accreditation{
+            display: none;
+        }
+        #slogan{
+            font-size: 20px !important;
+            font-weight: 800 !important;
+        }
+        #sales-pitch{
+            font-size: 16px !important;
+        }
+        #sales-pitch, #sales-pitch * {
+            font-size: 16px !important;
+            font-weight: 400 !important;
+            color: black !important;
+            ul{
+                padding-inline-start: 40px;
+                width: 80%;
+            }
+        }
     }
 }
