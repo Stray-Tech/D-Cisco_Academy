@@ -313,4 +313,8 @@ aside{
             width: 100%;
         }
     }
+    #page-nav-wrapper{
+        display: flex;
+        opacity: 1;
+    }
 }
