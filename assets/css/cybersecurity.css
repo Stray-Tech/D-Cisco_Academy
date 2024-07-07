@@ -149,9 +149,6 @@ main{
     body{ 
         gap: 2rem;
     }
-    #burger-button{
-        right: 1.5rem
-    }
     #hero-wrapper{
         max-width: 100vw;
     }
@@ -178,9 +175,12 @@ main{
         #slogan{
             font-size: 20px !important;
             font-weight: 800 !important;
+            text-align: center;
+            margin-top: 0.7rem;
         }
         #sales-pitch{
             font-size: 16px !important;
+            margin-top: 2.2rem;
         }
         #sales-pitch, #sales-pitch * {
             font-size: 16px !important;
@@ -190,6 +190,24 @@ main{
                 padding-inline-start: 40px;
                 width: 80%;
             }
+        }
+        #summary{
+            h4{
+                margin-top: 1rem;
+            }
+            ul{
+                width: 80%;
+                padding: 0;
+                li{
+                    font-size: 15px !important;
+                    font-weight: 400 !important;
+                }
+            }
+        }
+        #finishing-statement{
+            font-size: 16px !important;
+            padding: 2rem 0;
+            margin-bottom: 0;
         }
     }
 }

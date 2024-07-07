@@ -15,9 +15,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-body{
     margin: 0;
     padding: 0;
     max-width: 1900px;
@@ -117,8 +114,6 @@ nav{
         }
     }
 }
-
-
 
 aside{
     display: flex;
@@ -281,7 +276,7 @@ aside{
         z-index: 2;
         /* top: 25px; */
         margin: 2rem 0;
-        right: 4rem;
+        right: 1.5rem;
         /* background-image: url('../images/burger.png');
         background-size: 34px;
         background-repeat: no-repeat;
