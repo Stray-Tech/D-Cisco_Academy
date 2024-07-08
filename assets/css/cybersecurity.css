@@ -219,3 +219,13 @@ main{
         }
     }
 }
+
+@media (max-width: 380px){
+    #hero{
+        #hero-text{
+            button{
+                margin-left: 3.5rem;
+            }
+        }
+    }
+}
