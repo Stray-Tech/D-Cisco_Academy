@@ -212,6 +212,10 @@ aside{
     }
 }
 
+footer{
+    margin-bottom: 3rem;
+}
+
 @media (max-width: 1200px) {
     nav ul{
         width: 800px;
@@ -312,9 +316,5 @@ aside{
         img{
             width: 100%;
         }
-    }
-    #page-nav-wrapper{
-        display: flex;
-        opacity: 1;
     }
 }

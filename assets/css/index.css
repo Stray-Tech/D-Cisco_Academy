@@ -71,11 +71,14 @@ footer{
 
 @media (max-width: 760px) {
     #page-nav-wrapper{
+        display: flex;
+        opacity: 1;
+        margin: 1.5rem;
         gap: 10px;
-        left: 25%;
+        left: 22.5%;
         .page-nav{
-            height: 25px;
-            width: 25px;
+            height: 30px;
+            width: 30px;
             border-radius: 2px;
             line-height: 25px;
         }
