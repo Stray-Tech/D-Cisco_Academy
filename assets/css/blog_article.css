@@ -1,0 +1,134 @@
+/* Mulish Font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --dark-grey-color: #2F2F2F;
+    --light-grey-color: #808080;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    /* width: 88% */
+}
+
+.blog-title{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+ol { 
+    list-style-type: decimal-leading-zero;
+}
+
+ol *{
+    color: var(--light-grey-color) !important;
+    font-weight: 400 !important;
+    font-family: "Mulish", sans-serif !important;
+}
+
+h1{
+    font-family: "Mulish", sans-serif !important;
+    font-size: 38px !important;
+    font-weight: 800 !important;
+    color: black !important;
+    margin-bottom: 4rem;
+    #author-name{
+        font-weight: 700 !important;
+    }
+    #publish-date, #time-to-read{
+        font-weight: 600 !important;
+    }
+    #author-name, #publish-date, #time-to-read{
+        position: relative;
+        font-size: 13px !important;
+        color: black !important;
+        text-align: center;
+    }
+    strong{
+        line-height: 2px;
+    }
+}
+
+.dark-grey-color{
+    color: var(--dark-grey-color) !important;
+    font-weight: 800 !important;
+    font-size: 24px !important;
+    font-family: "Mulish", sans-serif !important;
+}
+
+.light-grey-color, p{
+    color: var(--light-grey-color) !important;
+    font-weight: 400 !important;
+    font-family: "Mulish", sans-serif !important;
+}
+
+.blog-img{
+    margin: auto;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.wrapper{
+    width: 80%;
+}
+
+#example-blog{
+    position: relative;
+    max-width: 820px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+    /* .wrapper{
+        width: 80%;
+    } */
+}
+
+
+#tags{
+    display: flex;
+    border-top: 0.74px solid #DCDCDC;
+    border-bottom: 0.74px solid #DCDCDC;
+    .tag{
+        background-color: #F6F6F6;
+        border-radius: 18px !important;
+        font-weight: 600 !important;
+        font-size: 13px !important;
+        font-family: "Mulish", sans-serif !important;
+        padding: 0.7rem 1.5rem;
+        margin: 1.2rem 0;
+    }
+}
+
+  
+
+@media (max-width: 1198px) {
+    .wrapper{
+        #blogs {
+            max-width: 400px;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    #page-nav-wrapper{
+        display: flex;
+        opacity: 1;
+        margin: 1.5rem;
+        gap: 10px;
+        left: 22.5%;
+        .page-nav{
+            height: 30px;
+            width: 30px;
+            border-radius: 2px;
+            line-height: 25px;
+        }
+    }
+}
