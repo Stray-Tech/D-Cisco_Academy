@@ -48,7 +48,7 @@ main{
     /* #blog {
         flex: 1 1 200px;
     } */
-    
+
     .blog{
         /* height: 300px; */
         width: 410px;
@@ -71,7 +71,7 @@ footer{
     align-items: center;
     gap: 50px;
     top: 0;
-    left: 35%;
+    left: 32%;
     .page-nav{
         height: 50px;
         width: 50px;
@@ -94,19 +94,25 @@ footer{
 
 @media (max-width: 1198px) {
     .wrapper{
-        #blogs {
+        #blogs{
             max-width: 400px;
+            justify-content: center;
         }
     }
 }
 
 @media (max-width: 760px) {
+    /* .wrapper{
+        #blogs {
+            justify-content: center;
+        }
+    } */
     #page-nav-wrapper{
-        display: flex;
         opacity: 1;
         margin: 1.5rem;
         gap: 10px;
-        left: 22.5%;
+        left: unset;
+        right: unset;
         .page-nav{
             height: 30px;
             width: 30px;
