@@ -4,11 +4,14 @@
 /* import Lexend font */
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
+/* Mulish Font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 *{
-    font-family: "Poppins", sans-serif !important;
-    color: #4800BD !important;
+    font-family: "Poppins", sans-serif;
+    color: #4800BD;
     font-size: 16px !important;
-    font-weight: 600 !important;
+    font-weight: 600;
 }
 
 body{
@@ -17,7 +20,7 @@ body{
     justify-content: center;
     margin: 0;
     padding: 0;
-    max-width: 1900px;
+    max-width: 1440px;
     min-width: 38%;
 }
 
@@ -41,7 +44,7 @@ body{
     height:48px;
     width:176px;
 }
-
+a{text-decoration: none;}
 nav{
     position: relative;
     height: fit-content;
@@ -57,8 +60,6 @@ nav{
         padding: 0;
         li{
             margin-left: 2rem;
-
-            a{text-decoration: none;}
 
             .dropdown {
                 position: relative;
