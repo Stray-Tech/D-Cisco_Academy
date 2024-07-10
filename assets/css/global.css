@@ -289,12 +289,12 @@ footer{
         background-size: 34px;
         background-repeat: no-repeat;
         background-position: center; */
-        /* &:focus, &:hover{ */
-            /* background-image: url('../images/icons8-close-window-50.png');
+        &:active, &:hover{
+             /* background-image: url('../images/icons8-close-window-50.png');
             background-size: 34px;
             background-repeat: no-repeat;
             background-position: center; */
-            /* &+nav{
+            &+nav{
                 display: block;
                 transition: 1s;
                 opacity: 1;
@@ -306,7 +306,7 @@ footer{
                     display: inline-block;
                     text-align: center;
                 }
-            } */
-        /* } */
+            }
+        }
     }
 }
