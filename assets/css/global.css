@@ -10,7 +10,7 @@
 *{
     font-family: "Poppins", sans-serif;
     color: #4800BD;
-    font-size: 16px !important;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -26,8 +26,8 @@ body{
 }
 
 .navbar{
-    width: 100vw !important;
-    max-width: fit-content !important;
+    width: 100vw;
+    max-width: fit-content;
 }
 
 #top-row-wrapper{
@@ -45,6 +45,8 @@ body{
     height:48px;
     width:176px;
 }
+
+#burger-button{display: none;}
 a{text-decoration: none;}
 nav{
     position: relative;
@@ -74,17 +76,17 @@ nav{
 
                 & .dropdown-content {
                     display: none;
-                    position: absolute !important;
+                    position: absolute;
                     background-color: #f1f1f1;
                     min-width: 13.8rem;
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                    /* z-index: 2 !important; */
+                    /* z-index: 2; */
                     border-radius: 20px;
                     & a {
-                        position: relative !important;
-                        font-size: 14px !important;
+                        position: relative;
+                        font-size: 14px;
                         padding: 12px 12px;
-                        z-index: 10 !important   ;
+                        z-index: 10   ;
                         text-decoration: none;
                         display: block;
                         &:first-child{
@@ -98,8 +100,8 @@ nav{
 
                         &:hover {
                             background-color: #ddd;
-                            position: relative !important;
-                            z-index: 10 !important;
+                            position: relative;
+                            z-index: 10;
                         }
                     }
                 }
@@ -137,11 +139,11 @@ aside{
         width: 275px;
         background-color:#F5F5F5;
         min-height: 60px;
-        font-weight: 300 !important;
-        font-size: 14px !important;
-        font-family: "Lexend", sans-serif !important;
+        font-weight: 300;
+        font-size: 14px;
+        font-family: "Lexend", sans-serif;
         &:focus{
-            outline: none !important;
+            outline: none;
             border: 2px solid #ddd;
         }
     }
@@ -166,16 +168,16 @@ aside{
     }
 
     h3, h4, a{
-        color: black !important;
-        font-family: "Lexend", sans-serif !important;
+        color: black;
+        font-family: "Lexend", sans-serif;
     }
     h4, a{
-        font-size: 14px !important;
-        font-weight: 300 !important;
+        font-size: 14px;
+        font-weight: 300;
     }
     h3{
         /* font-size: 16px; */
-        font-weight: 400 !important;
+        font-weight: 400;
     }
 
     ul{
@@ -266,7 +268,7 @@ footer{
         display: none;
         li{
             margin: 5px 0;
-            display: block !important;
+            display: block;
             width: 100%;
             text-align: center;
         }
@@ -277,7 +279,7 @@ footer{
     #burger-button{
         background: none;
         border: none;
-        display: flex !important;
+        display: flex;
         position: relative;
         z-index: 2;
         /* top: 25px; */
@@ -287,13 +289,13 @@ footer{
         background-size: 34px;
         background-repeat: no-repeat;
         background-position: center; */
-        &:focus, &:hover{
+        /* &:focus, &:hover{ */
             /* background-image: url('../images/icons8-close-window-50.png');
             background-size: 34px;
             background-repeat: no-repeat;
             background-position: center; */
-            &+nav{
-                display: block !important;
+            /* &+nav{
+                display: block;
                 transition: 1s;
                 opacity: 1;
                 background-color: white;
@@ -301,22 +303,10 @@ footer{
                 top: 4rem;
                 ul li{
                     margin: 5px 0;
-                    display: inline-block !important;
+                    display: inline-block;
                     text-align: center;
                 }
-            }
-        }
-    }
-
-    #blogs{
-        margin: 0 !important;
-        width: 100%
-    }
-
-    .blog{
-        width: 350px !important;
-        img{
-            width: 100%;
-        }
+            } */
+        /* } */
     }
 }
