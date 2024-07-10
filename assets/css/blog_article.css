@@ -31,6 +31,17 @@ ol li {
     counter-increment: list;
     list-style-type: none;
     position: relative;
+    color: var(--light-grey-color);
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+    white-space: pre;
+    margin: 1rem 0;
+    &:first-child{
+        margin-top: 1rem;
+    }
+    &:last-child{
+       margin-bottom: 1rem;
+    }
   }
 
 ol li:before {
@@ -44,20 +55,10 @@ ol li:before {
     width: 26px;
   }
 
-li {
-    color: var(--light-grey-color);
-    font-weight: 400;
-    font-family: "Mulish", sans-serif;
-    white-space: pre;
-    margin: 1rem 0;
-    &:first-child{
-        margin-top: 1rem;
-    }
-    &:last-child{
-       margin-bottom: 1rem;
-    }
+/* li {
+    
 
-}
+} */
 
 h1{
     font-family: "Mulish", sans-serif;
