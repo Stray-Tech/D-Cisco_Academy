@@ -17,6 +17,10 @@ main{
     color: black;
 }
 
+.blog-topic{
+    margin-top: 2.5rem;
+}
+
 ol { 
     list-style-type: decimal-leading-zero;
     color: var(--dark-grey-color);
@@ -112,7 +116,7 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 10px;
     margin-bottom: 40px;
     /* .wrapper{
         width: 80%;
@@ -146,6 +150,15 @@ main{
 }
 
 @media (max-width: 760px) {
+    h1{
+        margin-bottom: 4.5rem;
+    }
+
+    .blog-img{
+        position: relative;
+        bottom: 20px;
+    }
+
     #page-nav-wrapper{
         display: flex;
         opacity: 1;
