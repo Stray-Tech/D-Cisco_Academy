@@ -24,6 +24,7 @@ main{
 ol { 
     list-style-type: decimal-leading-zero;
     color: var(--dark-grey-color);
+    margin: 3.5rem;
 }
 
 ol li {
@@ -47,6 +48,15 @@ li {
     color: var(--light-grey-color);
     font-weight: 400;
     font-family: "Mulish", sans-serif;
+    white-space: pre;
+    margin: 1rem 0;
+    &:first-child{
+        margin-top: 1rem;
+    }
+    &:last-child{
+       margin-bottom: 1rem;
+    }
+
 }
 
 h1{
