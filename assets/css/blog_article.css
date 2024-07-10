@@ -139,19 +139,33 @@ main{
     } */
 }
 
+#tags-wrapper{
+    border-top: 0.74px solid #DCDCDC;
+    border-bottom: 0.74px solid #DCDCDC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
 
 #tags{
     display: flex;
-    border-top: 0.74px solid #DCDCDC;
-    border-bottom: 0.74px solid #DCDCDC;
     .tag{
+        display: flex;
+        align-items: center;
         background-color: #F6F6F6;
         border-radius: 18px;
-        font-weight: 600;
-        font-size: 13px;
-        font-family: "Mulish", sans-serif;
         padding: 0.7rem 1.5rem;
         margin: 1.2rem 0;
+        p{
+            font-weight: 600;
+            font-size: 13px;
+            font-family: "Mulish", sans-serif;
+            text-align: center;
+            color: var(--dark-grey-color);
+            margin: 0;
+            padding: 0  ;
+        }
     }
 }
 
