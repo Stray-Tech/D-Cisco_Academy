@@ -52,6 +52,9 @@ main{
     .blog{
         /* height: 300px; */
         width: 410px;
+        img{
+            width: 100%;
+        }
     }
 }
 
