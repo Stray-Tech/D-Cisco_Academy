@@ -15,7 +15,7 @@
             src="./assets/images/cropped-DCISCO-1-300x82 1.png"
             alt="D-Cisco logo"
             >
-            <button id="burger-button" style="display: none;">
+            <button id="burger-button">
                 <img src="./assets/images/burger.png" alt="nav-icon-burger">
             </button>
             <nav>
@@ -94,7 +94,7 @@
             <article id="example-blog">
                 <section class="blog-title">
                     <div>
-                        <h1 style="text-align: center; color: black;">Making Social Media Marketing<br>Even More Efficient
+                        <h1>Making Social Media Marketing<br>Even More Efficient
                             <p id="author">
                                 <span id="author-name">Caroline Parker  </span>
                                 <strong>.</strong>
@@ -114,10 +114,10 @@
                         <br>
                         remaining essentially unchanged. It was popularised in the 1960s with the release of Letrsheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         <ol>
-                            <li>Automated Google Search Ads Autopilot</li>
-                            <li>Randomised words which don't look even slightly believable.</li>
-                            <li>Lorem Ipsum generators on the Internet tend to repeat predefined chunks</li>
-                            <li>Automate multiple scenarios and eliminate tedious tasks. </li>
+                            <li>  Listen to what they say about you</li>
+                            <li>  Randomised words which don't look even slightly believable.</li>
+                            <li>  Lorem Ipsum generators on the Internet tend to repeat predefined chunks</li>
+                            <li>  Automate multiple scenarios and eliminate tedious tasks. </li>
                         </ol>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum been the industry's standard dummy text ever since the 1500s, when an unknown printegalley of type and scrambled it to make a type specimen book.</p>
                     </section>
@@ -152,37 +152,9 @@
             <!-- </div> -->
         </div>
     </main>
-    <footer>
-    </footer>
-    <script>
-        // workaround to hide search icon with dropdown menu open
-        let dropdown = document.querySelector('.dropdown'),
-        dropdownChildren = dropdown.children,
-        searchIcon = document.querySelector('.search-icon-wrapper')
-        function isOnTop() {
-            return [...dropdownChildren].some(div =>
-                div.getBoundingClientRect().left > (searchIcon.getBoundingClientRect().right+140)
-            );
-        }
-        document.querySelector('.dropdown').addEventListener('mouseover', ()=>{
-            if(!isOnTop()){
-                searchIcon.style.display = 'none'
-                
-                for(let i=0; i < dropdownChildren.length; i++){
-                    if(!isOnTop()){
-                        dropdownChildren[i].addEventListener('mouseover', ()=>{
-                            searchIcon.style.display = 'none'
-                        })
-                    }
-                    dropdownChildren[i].addEventListener('mouseout', ()=>{
-                        searchIcon.style.display = 'flex'
-                    })
-                }
-            }
-        })
-        document.querySelector('.dropdown').addEventListener('mouseout', ()=>{
-            searchIcon.style.display = 'flex'
-        })
-    </script>
+    <footer></footer>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script> -->
+    <script src="./assets/js/z-index-workaround-fix.js"></script>
+    <script src="./assets/js/nav-buttons.js"></script>
 </body>
 </html>

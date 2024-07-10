@@ -80,11 +80,11 @@ footer{
         width: 50px;
         border: 1px solid black;
         border-radius: 10px;
-        font-family: "Lexend", sans-serif !important;
+        font-family: "Lexend", sans-serif;
         text-align: center;
         line-height: 50px;
-        font-weight: 300 !important;
-        color: black !important;
+        font-weight: 300;
+        color: black;
     }
     #page-next{
         background: url('../images/ic_outline-arrow-forward-ios.png') no-repeat center;
@@ -105,11 +105,19 @@ footer{
 }
 
 @media (max-width: 760px) {
-    /* .wrapper{
-        #blogs {
-            justify-content: center;
+    .wrapper{
+        #blogs{
+            margin: 0;
+            width: 100%
         }
-    } */
+
+        .blog{
+            width: 350px;
+            img{
+                width: 100%;
+            }
+        }
+    }
     #page-nav-wrapper{
         opacity: 1;
         margin: 1.5rem;
