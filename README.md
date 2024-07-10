@@ -2,7 +2,7 @@
 
 ## Description
 
-Internship project creating placeholder blog page and cyber security landing page
+Internship project creating web pages with placeholder content which can be updated with a custom in-house CMS tool.
 
 [Link to deployed web page.](https://saif-uddin-93.github.io/D-Cisco_Academy/cybersecurity.html)
 
