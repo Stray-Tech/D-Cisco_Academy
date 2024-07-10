@@ -12,7 +12,7 @@ main{
 .blog-title{
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 ol { 
@@ -64,6 +64,7 @@ h1{
 .blog-img{
     margin: auto;
     width: 100%;
+    border-radius: 12.5px;
 }
 
 main{
@@ -73,6 +74,12 @@ main{
 }
 .wrapper{
     width: 80%;
+}
+
+.main-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #example-blog{
