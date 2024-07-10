@@ -19,9 +19,27 @@ main{
 
 ol { 
     list-style-type: decimal-leading-zero;
+    color: var(--dark-grey-color);
 }
 
-ol *{
+ol li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+  }
+
+ol li:before {
+    color: var(--dark-grey-color);
+    content: '0' counter(list) ".";
+    left: -32px;
+    position: absolute;
+    text-align: right;
+    font-weight: 700;
+    font-size: 15px;
+    width: 26px;
+  }
+
+li {
     color: var(--light-grey-color);
     font-weight: 400;
     font-family: "Mulish", sans-serif;
@@ -48,6 +66,10 @@ h1{
     strong{
         line-height: 2px;
     }
+}
+
+p, li{
+    font-size: 15px;
 }
 
 .dark-grey-color{
