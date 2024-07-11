@@ -1,11 +1,14 @@
-const burgerBtn = document.getElementById('burger-button');
+const burgerBtnElements = document.querySelectorAll('#burger-button, #burger-img');
 
-burgerBtn.addEventListener('click', ()=>{
-    const categoriesNav = document.querySelector('.dropdown');    
-    categoriesNav.style.display = 'inline-block';
-})
+for(let i=0; i<burgerBtnElements.length; i++){
+    burgerBtnElements[i].addEventListener('click', ()=>{
+        const categoriesNav = document.querySelector('.dropdown');    
+        categoriesNav.style.display = 'inline-block';
+    })
+}
+
+const categoriesContent = document.querySelector('.dropdown-content');    
 categoriesContent.addEventListener('click', ()=>{
-    const categoriesContent = document.querySelector('.dropdown-content');    
     categoriesContent.style.display = 'inline-block';
 })
 
