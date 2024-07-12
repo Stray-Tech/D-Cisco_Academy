@@ -233,7 +233,7 @@ aside{
     transition: 1s;
     opacity: 1;
     background-color: white;
-    position: fixed;
+    position: absolute;
     top: 4rem;
     ul li{
         margin: 5px 0;
