@@ -249,6 +249,9 @@ footer{
 @media (min-width: 1584px) {
     body{
         max-width: 1900px;
+        #page-nav-wrapper{
+            left: 36.5%
+        }
     }
 }
 
