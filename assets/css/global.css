@@ -216,6 +216,32 @@ aside{
     }
 }
 
+.burger-icon{
+    width: 34px;
+    height: 34px;
+}
+
+.burger-close-icon{
+    width: 34px;
+    height: 34px;
+}
+
+.reveal{
+    /* display: block !important;
+    opacity: 1 !important; */
+    display: block;
+    transition: 1s;
+    opacity: 1;
+    background-color: white;
+    position: fixed;
+    top: 4rem;
+    ul li{
+        margin: 5px 0;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
 footer{
     margin-bottom: 3rem;
 }
@@ -289,12 +315,12 @@ footer{
         background-size: 34px;
         background-repeat: no-repeat;
         background-position: center; */
-        &:active, &:hover{
+        /* &:hover{ */
              /* background-image: url('../images/icons8-close-window-50.png');
             background-size: 34px;
             background-repeat: no-repeat;
             background-position: center; */
-            &+nav{
+            /* &+nav{
                 display: block;
                 transition: 1s;
                 opacity: 1;
@@ -306,7 +332,8 @@ footer{
                     display: inline-block;
                     text-align: center;
                 }
-            }
-        }
+            } */
+        /* } */
+        
     }
 }

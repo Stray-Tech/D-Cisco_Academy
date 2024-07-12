@@ -1,30 +1,30 @@
-const burgerBtn = document.getElementById('burger-button');
+function burgerMenu(event){
+    console.log(event)
+    const categoriesNav = document.querySelector('#top-nav');
+    const burgerIcon = document.querySelector('#burger-img');
 
-// burgerBtn.addEventListener('click', ()=>{
-//     const categoriesNav = document.querySelector('.dropdown-content');
-//     burgerBtn.style = 
-//     `background: none;
-//     border: none;
-//     display: flex;
-//     position: relative;
-//     z-index: 2;
-//     margin: 2rem 0;
-//     right: 1.5rem;
-//         &+nav{
-//             display: block;
-//             transition: 1s;
-//             opacity: 1;
-//             background-color: white;
-//             position: fixed;
-//             top: 4rem;
-//             ul li{
-//                 margin: 5px 0;
-//                 display: inline-block;
-//                 text-align: center;
-//             }
-//         }
-//     }`
-//     categoriesNav.style.display = 'flex';
-// })
+    categoriesNav.classList.toggle('reveal');
+    burgerIcon.classList.toggle('burger-close-icon');
+    burgerIcon.classList.toggle('burger-icon');
 
-console.log(burgerBtn)
+    if ('burger-icon' == burgerIcon.className){
+        burgerIcon.src = './assets/images/burger.png'
+        burgerIcon.alt = 'burger icon'
+    }
+    else if ('burger-close-icon' == burgerIcon.className){
+        burgerIcon.src = './assets/images/icons8-close-window-50.png'
+        burgerIcon.alt = 'burger close icon'
+    }
+}
+
+// function 
+
+addGlobalEventListener('click', burgerMenu, '#burger-img');
+addGlobalEventListener('click', burgerMenu, '#burger-button');
+
+function addGlobalEventListener(typeOfEvent, callback, selector, stopPropagation=true) {
+    document.addEventListener(typeOfEvent, (eventObj) => {
+        if (eventObj.target.matches(selector)) callback(eventObj);
+        if (stopPropagation) eventObj.stopPropagation();
+    })
+}
