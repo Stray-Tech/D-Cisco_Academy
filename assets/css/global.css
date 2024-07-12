@@ -297,6 +297,11 @@ footer{
             display: block;
             width: 100%;
             text-align: center;
+            .dropdown{
+                .dropdown-content{
+                    margin-top: 0.5rem;
+                }
+            }
         }
     }
     aside{
