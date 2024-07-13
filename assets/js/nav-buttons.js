@@ -12,7 +12,7 @@ function burgerMenu(event){
         burgerIcon.alt = 'burger icon'
     }
     else if ('burger-close-icon' == burgerIcon.className){
-        burgerIcon.src = './assets/images/icons8-close-window-50.png'
+        burgerIcon.src = './assets/images/icons8-close-window-50-RED.png'
         burgerIcon.alt = 'burger close icon'
     }
 }
