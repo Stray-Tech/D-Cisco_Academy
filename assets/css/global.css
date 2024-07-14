@@ -112,7 +112,7 @@ nav{
                     background-color: white;
                     padding: 0;
                     margin: 0;
-                    top: 0.2rem;
+                    /* top: 0.2rem; */
                 }
             }
         }
@@ -153,9 +153,9 @@ aside{
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: end; 
+        justify-content: end;
         align-items: center;
-        
+
         #search-icon{
             position: relative;
             z-index: 1;
@@ -348,6 +348,6 @@ footer{
                 }
             } */
         /* } */
-        
+
     }
 }
