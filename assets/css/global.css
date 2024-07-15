@@ -58,7 +58,7 @@ nav{
     ul{
         list-style-type: none;
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
         flex-wrap: wrap;
         padding: 0;
         li{
@@ -204,7 +204,7 @@ aside{
         padding: 1.5rem;
         .featured-post{
             display: flex;
-            flex-direction: row;
+            /* flex-direction: row; */
             align-items: center;
             gap: 10px;
             margin-bottom: 2rem;
@@ -226,19 +226,23 @@ aside{
     height: 34px;
 }
 
-.reveal{
-    /* display: block !important;
-    opacity: 1 !important; */
+header #top-nav.reveal{
     display: block;
+    left: 0;
     transition: 1s;
     opacity: 1;
     background-color: white;
     position: absolute;
-    top: 4rem;
-    ul li{
-        margin: 5px 0;
-        display: inline-block;
-        text-align: center;
+    z-index: 2;
+    ul{
+        width: 310px;
+        li{
+            padding-left: 2.5rem;
+            margin: 10px 0;
+            display: inline-block;
+            text-align: left;
+            font-size: 13px;
+        }
     }
 }
 
@@ -305,7 +309,7 @@ footer{
             margin: 5px 0;
             display: block;
             width: 100%;
-            text-align: center;
+            /* text-align: center; */
             .dropdown{
                 .dropdown-content{
                     margin-top: 0.5rem;
@@ -325,29 +329,5 @@ footer{
         /* top: 25px; */
         margin: 2rem 0;
         right: 1.5rem;
-        /* background-image: url('../images/burger.png');
-        background-size: 34px;
-        background-repeat: no-repeat;
-        background-position: center; */
-        /* &:hover{ */
-             /* background-image: url('../images/icons8-close-window-50.png');
-            background-size: 34px;
-            background-repeat: no-repeat;
-            background-position: center; */
-            /* &+nav{
-                display: block;
-                transition: 1s;
-                opacity: 1;
-                background-color: white;
-                position: fixed;
-                top: 4rem;
-                ul li{
-                    margin: 5px 0;
-                    display: inline-block;
-                    text-align: center;
-                }
-            } */
-        /* } */
-
     }
 }
