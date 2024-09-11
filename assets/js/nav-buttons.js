@@ -17,10 +17,22 @@ function burgerMenu(event){
     }
 }
 
-// function 
+function openCategoriesMenu(event){
+    dropdownContent = document.querySelector(".dropdown-content")
+    dropdownButton = document.querySelector(".dropbtn")
+    dropdownContent.classList.toggle("reveal");
+    if(Object.values(dropdownContent.classList).includes("reveal")){
+        dropdownButton.innerHTML = "▴"
+    }
+    else{
+        dropdownButton.innerHTML = "▾"
+    }
+}
 
 addGlobalEventListener('click', burgerMenu, '#burger-img');
 addGlobalEventListener('click', burgerMenu, '#burger-button');
+addGlobalEventListener('click', openCategoriesMenu, '.dropdown');
+addGlobalEventListener('click', openCategoriesMenu, '.dropbtn');
 
 function addGlobalEventListener(typeOfEvent, callback, selector, stopPropagation=true) {
     document.addEventListener(typeOfEvent, (eventObj) => {

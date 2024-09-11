@@ -68,11 +68,13 @@ nav{
                 position: relative;
                 display: inline-block;
 
-                &:hover .dropdown-content {
+                /* &:hover .dropdown-content {
                     display: block;
-                }
+                } */
 
-                &:hover .dropbtn {background-color: #F5F5F5;}
+                &:hover .dropbtn {
+                    background-color: #F5F5F5;
+                }
 
                 & .dropdown-content {
                     display: none;
@@ -244,6 +246,10 @@ header #top-nav.reveal{
             font-size: 13px;
         }
     }
+}
+
+.reveal{
+    display: block !important;
 }
 
 footer{
