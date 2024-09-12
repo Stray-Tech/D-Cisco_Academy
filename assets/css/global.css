@@ -20,7 +20,6 @@ body{
     justify-content: center;
     margin: 0;
     padding: 0;
-    /* max-width: 1440px; */
     max-width: 1584px;
     min-width: 38%;
 }
@@ -34,8 +33,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin-bottom: 4rem; */
-    /* width: auto; */
 }
 
 #logo{
@@ -57,7 +54,6 @@ nav{
     ul{
         list-style-type: none;
         display: flex;
-        /* flex-direction: row; */
         flex-wrap: wrap;
         padding: 0;
         li{
@@ -113,7 +109,6 @@ nav{
                     background-color: white;
                     padding: 0;
                     margin: 0;
-                    /* top: 0.2rem; */
                 }
             }
         }
@@ -127,7 +122,6 @@ aside{
     position: relative;
     width: 300px;
     #search-wrapper{
-        /* max-width: 300px; */
         position: relative;
     }
 
@@ -177,7 +171,6 @@ aside{
         font-weight: 300;
     }
     h3{
-        /* font-size: 16px; */
         font-weight: 400;
     }
 
@@ -205,12 +198,10 @@ aside{
         padding: 1.5rem;
         .featured-post{
             display: flex;
-            /* flex-direction: row; */
             align-items: center;
             gap: 10px;
             margin-bottom: 2rem;
             .feature-img {
-                /* height: 40%; */
                 width: 90px;
             }
         }
@@ -244,6 +235,7 @@ header #top-nav.reveal{
             display: inline-block;
             text-align: left;
             font-size: 13px;
+            width: 100%;
         }
     }
 }
@@ -300,22 +292,17 @@ footer{
     }
     #logo{
         z-index: 2;
-        /* top: 30px; */
         left: 2rem;
         width: 100px;
         height: 27px;
     }
     nav{
         position: absolute;
-        /* top: 5rem; */
-        /* margin-bottom: 5rem; */
         opacity: 0;
         display: none;
         li{
             margin: 5px 0;
             display: block;
-            width: 100%;
-            /* text-align: center; */
             .dropdown{
                 .dropdown-content{
                     margin-top: 0.5rem;
@@ -332,7 +319,6 @@ footer{
         display: flex;
         position: relative;
         z-index: 3;
-        /* top: 25px; */
         margin: 2rem 0;
         right: 1.5rem;
     }
