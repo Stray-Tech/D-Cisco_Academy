@@ -51,11 +51,11 @@ a{text-decoration: none;}
 nav{
     position: relative;
     height: fit-content;
-    width: fit-content;
     z-index: 1;
     top: 1.5rem;
     right: 5rem;
     ul{
+        width: fit-content;
         list-style-type: none;
         display: flex;
         /* flex-direction: row; */
@@ -237,7 +237,7 @@ header #top-nav.reveal{
     position: absolute;
     z-index: 2;
     ul{
-        width: 310px;
+        /* width: 310px; */
         li{
             padding-left: 2.5rem;
             margin: 10px 0;
@@ -265,7 +265,7 @@ footer{
     }
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     nav ul{
         width: 800px;
     }
@@ -289,7 +289,7 @@ footer{
     nav ul{
         width: 400px;
     }
-}
+} */
 /* mobile */
 @media (max-width: 760px) {
     body{
@@ -331,7 +331,7 @@ footer{
         border: none;
         display: flex;
         position: relative;
-        z-index: 2;
+        z-index: 3;
         /* top: 25px; */
         margin: 2rem 0;
         right: 1.5rem;
