@@ -3,16 +3,16 @@ function burgerMenu(event){
     const categoriesNav = document.querySelector('#top-nav');
     const burgerIcon = document.querySelector('#burger-img');
 
-    categoriesNav.classList.toggle('reveal');
+    categoriesNav.classList.toggle('hidden');
     burgerIcon.classList.toggle('burger-close-icon');
     burgerIcon.classList.toggle('burger-icon');
 
-    if ('burger-icon' == burgerIcon.className){
-        burgerIcon.src = './assets/images/burger.png'
+    if (burgerIcon.className.includes('burger-icon')){
+        burgerIcon.src = './public/images/burger.png'
         burgerIcon.alt = 'burger icon'
     }
-    else if ('burger-close-icon' == burgerIcon.className){
-        burgerIcon.src = './assets/images/icons8-close-window-50-no-border.png'
+    else if (burgerIcon.className.includes('burger-close-icon')){
+        burgerIcon.src = './public/images/icons8-close-window-50-no-border.png'
         burgerIcon.alt = 'burger close icon'
     }
 }
@@ -20,8 +20,8 @@ function burgerMenu(event){
 function openCategoriesMenu(event){
     dropdownContent = document.querySelector(".dropdown-content")
     dropdownButton = document.querySelector(".dropbtn")
-    dropdownContent.classList.toggle("reveal");
-    if(Object.values(dropdownContent.classList).includes("reveal")){
+    dropdownContent.classList.toggle("hidden");
+    if(!dropdownContent.className.includes("hidden")){
         dropdownButton.innerHTML = "▴"
     }
     else{

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
+    <!-- <link rel="stylesheet" href="../styles/index.css"> -->
+    <link rel="stylesheet" href="../styles/output.css">
+    <title>Blog</title>
+</head>
+<body class="flex flex-col justify-center m-0 p-0 min-w-[38%]">
+    <header>
+        <div id="top-row-wrapper" class="flex flex-wrap justify-between">
+            <img 
+            id="logo"
+            src="../public/images/cropped-DCISCO-1-300x82 1.png"
+            alt="D-Cisco logo"
+            class="relative left-20 mx-[0] my-8 h-[48px] w-[176px]"
+            >
+            <button id="burger-button" class="hidden">
+                <img id="burger-img" class="burger-icon w-[34px] h-[34px]" src="../public/images/burger.png" alt="burger icon">
+            </button>
+            <nav id="top-nav" class="relative h-[fit-content] w-[fit-content] top-6 right-20">
+                <ul class="list-none flex flex-wrap p-0">
+                    <li class="ml-8" class="ml-8"><a class="no-underline" href="./index.html">Home</a></li>
+                    <li class="ml-8">
+                        <div class="dropdown relative inline-block">
+                            Course Categories
+                            <span class="dropbtn border-[none] relative bg-[white] p-0 m-0">▾</span>
+                            <!-- <img class="dropbtn" src="./assets/images/icon-park-outline_down.svg"></img> -->
+                            <div class="dropdown-content hidden absolute bg-[#f1f1f1] min-w-[13.8rem] [box-shadow:0px_8px_16px_0px_rgba(0,0,0,0.2)] rounded-[20px]">
+                                <a class="relative text-[14px] p-[12px] z-10 no-underline block rounded-tl-[20px] rounded-tr-[20px] hover:bg-[#ddd] hover:relative hover:z-10" href="./cybersecurity.html">Cyber Security</a>
+                                <a class="relative text-[14px] p-[12px] z-10 no-underline block hover:bg-[#ddd] hover:relative hover:z-10" href="#">Data Science</a>
+                                <a class="relative text-[14px] p-[12px] z-10 no-underline block hover:bg-[#ddd] hover:relative hover:z-10" href="#">Networking</a>
+                                <a class="relative text-[14px] p-[12px] z-10 no-underline block hover:bg-[#ddd] hover:relative hover:z-10" href="#">Programming</a>
+                                <a class="relative text-[14px] p-[12px] z-10 no-underline block hover:bg-[#ddd] hover:relative hover:z-10" href="#">Programming Infastructure</a>
+                                <a class="relative text-[14px] p-[12px] z-10 no-underline block hover:bg-[#ddd] hover:relative hover:z-10" href="#">OS and Information Tech.</a>
+                                <a class="relative text-[14px] p-[12px] z-10 no-underline block hover:bg-[#ddd] hover:relative hover:z-10" href="#">Digital Marketing</a>
+                                <a class="relative text-[14px] p-[12px] z-10 no-underline block hover:bg-[#ddd] hover:relative hover:z-10 rounded-bl-[20px] rounded-br-[20px]" href="#">Digital Literacy</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ml-8"><a class="no-underline" href="#">Services</a></li>
+                    <li class="ml-8"><a class="no-underline" href="#">Success Stories</a></li>
+                    <li class="ml-8"><a class="no-underline" href="./index.html">Blog</a></li>
+                    <li class="ml-8"><a class="no-underline" href="#">About Us</a></li>
+                    <li class="ml-8"><a class="no-underline" href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="flex gap-[50px] justify-center">
+        <aside class="flex flex-col gap-[50px] relative w-[300px]">
+            <div id="search-wrapper" class="relative">
+                <div class="search-icon-wrapper absolute w-full h-full flex items-center">
+                    <svg id="search-icon" class="relative mr-[15px] hover:h-[30px] hover:w-[30px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" alt="search icon">
+                        <path d="M15.5 14H14.71L14.43 13.73C15.4439 12.554 16.0011 11.0527 16 9.5C16 8.21442 15.6188 6.95772 14.9046 5.8888C14.1903 4.81988 13.1752 3.98676 11.9874 3.49479C10.7997 3.00282 9.49279 2.87409 8.23192 3.1249C6.97104 3.3757 5.81285 3.99477 4.90381 4.90381C3.99477 5.81285 3.3757 6.97104 3.1249 8.23192C2.87409 9.49279 3.00282 10.7997 3.49479 11.9874C3.98676 13.1752 4.81988 14.1903 5.8888 14.9046C6.95772 15.6188 8.21442 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="black" fill-opacity="0.6"/>
+                    </svg>
+                </div>
+                <input id="search-bar" class="relative z-0 pl-[25px] rounded-[60px] border-[2px] border-[transparent] w-[275px] bg-[#F5F5F5] min-h-[60px] font-light text-[14px] font-lexend focus:outline-[none] focus:border-[2px] focus:border-[solid] focus:border-[#ddd]" type="text" placeholder="Search...">
+            </div>
+            <section id="categories-aside">
+                <h3 class="text-[black] font-lexend font-normal">Categories</h3>
+                <ul class="list-none p-0">
+                    <li><a class="no-underline" href="">All (29)</a></li>    
+                    <li><a class="no-underline" href="">Academy (11)</a></li>
+                    <li><a class="no-underline" href="">Technology (18)</a></li>
+                </ul>
+            </section>
+            <section id="featured-section" class="bg-[#F5F5F5] rounded-[20px] p-6">
+                <h3 class="text-[black] font-lexend font-normal">Featured Posts</h3>
+                <ul class="list-none p-0">
+                    <li><a class="no-underline" class="featured-post flex items-center gap-[10px] mb-8" href="./blog_article.html">
+                        <img class="feature-img w-[90px]" src="../public/images/image 2.png" alt="">
+                        <h4 class="text-[black] font-lexend text-[14px] font-light">Is Cyersecurity the right field for a tech enthusiast?</h4>
+                    </a></li>
+                    <li><a class="no-underline featured-post flex items-center gap-[10px] mb-8" href="./blog_article.html">
+                        <img class="feature-img" src="../public/images/image 3.png" alt="">
+                       <h4 class="text-[black] font-lexend text-[14px] font-light">Why you should embrace remote work</h4>
+                    </a></li>
+                    <li><a class="no-underline featured-post flex items-center gap-[10px] mb-8" href="./blog_article.html">
+                        <img class="feature-img" src="../public/images/image 4.png" alt="">
+                        <h4 class="text-[black] font-lexend text-[14px] font-light">Cyber Attacks - 3 things you should know</h4>
+                    </a></li>
+                    <li><a class="no-underline featured-post flex items-center gap-[10px] mb-8"  href="./blog_article.html">
+                        <img class="feature-img" src="../public/images/image 5.png" alt="">
+                        <h4 class="text-[black] font-lexend text-[14px] font-light">After CCNA certification, what next?</h4>
+                    </a></li>
+                    <li><a class="no-underline featured-post flex items-center gap-[10px] mb-8"  href="./blog_article.html">
+                        <img class="feature-img" src="../public/images/image 6.png" alt="" style="height: 62px;">
+                        <h4 class="text-[black] font-lexend text-[14px] font-light">Why you need a Cisco Certification</h4>
+                    </a></li>
+                </ul>
+            </section>
+        </aside>
+        <div>
+            <section id="blogs" class="max-w-[860px] flex justify-between flex-wrap gap-[40px] mb-[40px]">
+                <article class="blog w-[410px]">
+                    <a class="no-underline" href="./blog_article.html">
+                        <img src="../public/images/image 1.png" alt="" class="w-full">
+                        <div class="caption flex justify-center border-b-[0.75px_solid_#707070]">
+                            <p class="date font-lexend font-light text-[14px] text-[#777777]">16 April 2023</p>
+                            <p class="author font-lexend font-light text-[14px] text-[#777777]">Damilola Adebayo</p>
+                            <p class="time-to-read font-lexend font-light text-[14px] text-[#777777]">3 min read</p>
+                        </div>
+                    </a>
+                    <h2 class="blog-title font-lexend font-normal text-[20px] text-[#2F2F2F]">Essential Network Security Best Practices: Tips and Tricks for Beginners</h2>
+                    <p class="blog-content font-lexend font-light text-[14px] text-[#6A6A6A]">In today's technology-driven world, protecting your computing system from cyber-attacks is crucial. Follow our network security best practic...</p>
+                    <a class="no-underline view-more text-black font-lexend font-light text-[14px]" href="./blog_article.html">View More</a>
+                </article>
+                <article class="blog w-[410px]">
+                    <a class="no-underline" href="./blog_article.html">
+                        <img src="../public/images/MoEJ1680524320.png" class="w-full" alt="">
+                        <div class="caption flex justify-center border-b-[0.75px_solid_#707070]">
+                            <p class="date font-lexend font-light text-[14px] text-[#777777]">3 April 2023</p>
+                            <p class="author font-lexend font-light text-[14px] text-[#777777]">Damilola Adebayo</p>
+                            <p class="time-to-read font-lexend font-light text-[14px] text-[#777777]">3 min read</p>
+                        </div>
+                    </a>
+                    <h2 class="blog-title font-lexend font-normal text-[20px] text-[#2F2F2F]">UNITes Academy Commissions Get Connected Laboratory at Queen's College, Yaba</h2>
+                    <p class="blog-content font-lexend font-light text-[14px] text-[#6A6A6A]">UNITes Academy has commissioned a state-of-the-art Get Connected Laboratory at Queen's College, Yaba, equipped with the latest IT tools and...</p>
+                    <a class="no-underline view-more text-black font-lexend font-light text-[14px]" href="./blog_article.html">View More</a>
+                </article>
+                <article class="blog w-[410px]">
+                    <a class="no-underline" href="./blog_article.html">
+                        <img src="../public/images/oglP1680274179.png" class="w-full" alt="">
+                        <div class="caption flex justify-center border-b-[0.75px_solid_#707070]">
+                            <p class="date font-lexend font-light text-[14px] text-[#777777]">31 March 2023</p>
+                            <p class="author font-lexend font-light text-[14px] text-[#777777]">Damilola Adebayo</p>
+                            <p class="time-to-read font-lexend font-light text-[14px] text-[#777777]">3 min read</p>
+                        </div>
+                    </a>
+                    <h2 class="blog-title font-lexend font-normal text-[20px] text-[#2F2F2F]">Why your Computer is Slow: Tips and Tricks to Fix this for Non-IT Professionals</h2>
+                    <p class="blog-content font-lexend font-light text-[14px] text-[#6A6A6A]">Learn how to optimize your computer's performance with these simple tips and tricks, even if you're not an IT professional. From understandi...</p>
+                    <a class="no-underline view-more text-black font-lexend font-light text-[14px]" href="./blog_article.html">View More</a>
+                </article>
+                <article class="blog w-[410px]">
+                    <a class="no-underline" href="./blog_article.html">
+                        <img src="../public/images/iwXL1679668883.png" class="w-full" alt="">
+                        <div class="caption flex justify-center border-b-[0.75px_solid_#707070]">
+                            <p class="date font-lexend font-light text-[14px] text-[#777777]">24 March 2023</p>
+                            <p class="author font-lexend font-light text-[14px] text-[#777777]">Damilola Adebayo</p>
+                            <p class="time-to-read font-lexend font-light text-[14px] text-[#777777]">3 min read</p>
+                        </div>
+                    </a>
+                    <h2 class="blog-title font-lexend font-normal text-[20px] text-[#2F2F2F]">What is the Internet of Things (IoT): A Beginner's Guide to Connected Devices</h2>
+                    <p class="blog-content font-lexend font-light text-[14px] text-[#6A6A6A]">We delve into the basics of the Internet of Things (IoT), its impact on our daily lives, and its potential for the future of technology. Fro...</p>
+                    <a class="no-underline view-more text-black font-lexend font-light text-[14px]" href="./blog_article.html">View More</a>
+                </article>
+                <article class="blog w-[410px]">
+                    <a class="no-underline" href="./blog_article.html">
+                        <img src="../public/images/image 7.png" alt="" class="w-full">
+                        <div class="caption flex justify-center border-b-[0.75px_solid_#707070]">
+                            <p class="date font-lexend font-light text-[14px] text-[#777777]">24 November 2022</p>
+                            <p class="author font-lexend font-light text-[14px] text-[#777777]">Admin</p>
+                            <p class="time-to-read font-lexend font-light text-[14px] text-[#777777]">3 min read</p>
+                        </div>
+                    </a>
+                    <h2 class="blog-title font-lexend font-normal text-[20px] text-[#2F2F2F]">Technologies That Will Impact Our Lives In 2023</h2>
+                    <p class="blog-content font-lexend font-light text-[14px] text-[#6A6A6A]">Technology is constantly evolving and improving, making it an integral part of our lives. It helps us stay connected with friends and family...</p>
+                    <a class="no-underline view-more text-black font-lexend font-light text-[14px]" href="./blog_article.html">View More</a>
+                </article>
+                <article class="blog w-[410px]">
+                    <a class="no-underline" href="./blog_article.html">
+                        <img src="../public/images/image 8.png" alt="" class="w-full">
+                        <div class="caption flex justify-center border-b-[0.75px_solid_#707070]">
+                            <p class="date font-lexend font-light text-[14px] text-[#777777]">17 November 2022</p>
+                            <p class="author font-lexend font-light text-[14px] text-[#777777]">Admin</p>
+                            <p class="time-to-read font-lexend font-light text-[14px] text-[#777777]">3 min read</p>
+                        </div>
+                    </a>
+                    <h2 class="blog-title font-lexend font-normal text-[20px] text-[#2F2F2F]">Why Is Cyber Security Important</h2>
+                    <p class="blog-content font-lexend font-light text-[14px] text-[#6A6A6A]">Cyber security is important for everyone because the internet is such an integral part of our lives. We use it for everything from online ba...</p>
+                    <a class="no-underline view-more text-black font-lexend font-light text-[14px]" href="./blog_article.html">View More</a>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer class="mb-[3rem] relative h-[52px] w-full, flex, justify-center">
+        <nav id="page-nav-wrapper" class="absolute flex justify-center items-center gap-[50px] top-0 left-[33%]">
+            <div id="page-back" class="page-nav h-[50px] w-[50px] border-[1px] border-[solid] border-[black] rounded-[10px] font-lexend text-center leading-[50px] font-light text-black bg-[url('../public/images/ic_outline-arrow-forward-ios.png')_no-repeat_center]"></div>
+            <div id="page-1" class="page-nav h-[50px] w-[50px] border-[1px] border-[solid] border-[black] rounded-[10px] font-lexend text-center leading-[50px] font-light text-black">1</div>
+            <div id="page-2" class="page-nav h-[50px] w-[50px] border-[1px] border-[solid] border-[black] rounded-[10px] font-lexend text-center leading-[50px] font-light text-black">2</div>
+            <div id="page-3" class="page-nav h-[50px] w-[50px] border-[1px] border-[solid] border-[black] rounded-[10px] font-lexend text-center leading-[50px] font-light text-black">3</div>
+            <div id="page-next" class="page-nav h-[50px] w-[50px] border-[1px] border-[solid] border-[black] rounded-[10px] font-lexend text-center leading-[50px] font-light text-black bg-[url('../public/images/ic_outline-arrow-forward-ios.png')_no-repeat_center] rotate-[0.5turn]"></div>
+        </nav>
+    </footer>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script> -->
+    <!-- <script src="./assets/js/z-index-workaround-fix.js"></script> -->
+    <script src="../src/js/nav-buttons.js"></script>
+</body>
+</html>

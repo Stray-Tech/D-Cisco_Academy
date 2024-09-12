@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        custom: ['Poppins', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        lexend: ['Lexend', 'sans-serif'],
+        mulish: ['Mulish', 'sans-serif'],
       },
       colors: {
         customBgColor: '#FFFAFE',
