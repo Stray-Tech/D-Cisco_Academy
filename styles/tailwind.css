@@ -20,11 +20,15 @@
     font-weight: 600;
 }
 
+.caption{
+    border-bottom: 1px solid #777777;
+}
+
 @layer utilities {
     header #top-nav.reveal{
         @apply block left-[0] [transition:1s] opacity-100 bg-[white] absolute;
         ul{
-            @apply w-[310px];
+            @apply w-[260px];
             li{
                 @apply pl-10 mx-[0] my-[10px] inline-block text-left text-[13px];
             }

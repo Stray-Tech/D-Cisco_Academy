@@ -11,21 +11,6 @@ module.exports = {
         lexend: ['Lexend', ...defaultTheme.fontFamily.sans],
         mulish: ['Mulish', ...defaultTheme.fontFamily.sans],
       },
-      colors: {
-        customBgColor: '#FFFAFE',
-        loginColor: '#FCE3F5',
-        snColor: '#AD47B2',
-        editorColor: '#F4F4F4',
-      },
-      width: {
-        'custom-width': '12rem',
-      },
-      inset: {
-        'custom-inset': '6.9rem',
-      },
-      fontSize: {
-        'smallFont': '12px',
-      },
     },
   },
   plugins: [
