@@ -68,7 +68,6 @@
     font-size: 24px;
   }
 }
-
 .enroll-button {
   border-radius: 20px;
   padding: 20px 60px;
@@ -82,9 +81,10 @@
   background-color: #4800bd;
   color: white;
   margin-bottom: 3rem;
-  &:active {
-    background-color: #6200ff;
-  }
+}
+
+.purple-button a {
+  color: white;
 }
 
 main {
