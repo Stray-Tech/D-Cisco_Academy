@@ -62,14 +62,7 @@ nav{
             .dropdown {
                 position: relative;
                 display: inline-block;
-
-                /* &:hover .dropdown-content {
-                    display: block;
-                } */
-
-                &:hover .dropbtn {
-                    background-color: #F5F5F5;
-                }
+                cursor: pointer;
 
                 & .dropdown-content {
                     display: none;
@@ -201,9 +194,6 @@ aside{
             align-items: center;
             gap: 10px;
             margin-bottom: 2rem;
-            .feature-img {
-                width: 90px;
-            }
         }
     }
 }
