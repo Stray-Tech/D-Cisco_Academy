@@ -36,12 +36,13 @@
 #hero-text h3 {
     font-size: 32px;
     font-weight: 400;
+    line-height: 140%;
 }
 
 .hero-theme-span {
     color: white;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 32px;   
 }
 
 @media (max-width: 1024px) {
@@ -74,7 +75,7 @@
     background-color: white;
     cursor: pointer;
     border: none;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .purple-button{
